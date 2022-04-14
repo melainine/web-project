@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Loigin and Registration Form in loi  HTML | CodingNepal</title>
+      <link rel="stylesheet" href="../css/style.css">
+    </head>
+   <body>
+      <div class="container">
+         <div class="title-text">
+            <div class="title_inscription">
+               <p>Inscription</p>
+            </div>
+         </div>
+            <div class="form-champ">
+               <form action="../index.html" class="login">
+                  <div class="champ">
+                     <input type="text" placeholder="Nom" required>
+                     <input type="text" placeholder="Prenom" required>      
+                  </div>
+                  <div class="champ">
+                     <input type="number" placeholder="NNI (numéro national d'identification)" required>
+                  </div>
+                  <div class="champ">
+                     <input type="file" id="carte_identite" placeholder="carte identité" required>
+                     <label style="font-weight: bold; color:var(--main) ;font-family: sans-serif;" for="carte_identite">photocopie de  carte identite</label>
+                  </div><div class="champ">
+                     <input type="date" placeholder="date de naissance" id="date-naissance" required>
+                     <label style="font-weight: bold; color:var(--main) ;font-family: sans-serif;" for="date-naissance">date naissance</label>
+                  </div><div class="champ">
+                     <input type="file" id="releve de note" placeholder="releve de note" required>
+                     <label style="font-weight: bold;color: var(--main) ;font-family: sans-serif;" for="releve de note">photocopie de relevé de note bac </label>
+                  <div class="champ btn">
+                    <div class="btn-layer"></div>
+                     <input type="submit" value="Envoyer">
+                  </div>
+                  <div class="signup-link">
+                     vous avez de problem? <a href="">Envoyer un message</a>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script src="../scripts/inscriptions.js">
+      </script>
+      
+   </body>
+</html>

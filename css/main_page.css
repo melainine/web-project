@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  :root{
+  --main: #24262b;
+   --second: hsla(0, 0%, 29%, 1);
+    --quick-silver: hsla(0, 0%, 66%, 1);
+    --davys-grey: hsla(0, 0%, 29%, 1);
+    --teal-blue: hsla(195, 42%, 35%, 1);
+    --silver-chalice: hsla(240, 1%, 66%, 1);
+  }
+  body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    background: url(back1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  div.head_wraper {
+    background:initial;
+    
+    height: 785px;
+  }
+  .head {
+   background:#ffffff;
+   height: 135px;
+   display: grid;
+   grid-template-columns: 45.3% 35.3% 20.3%;
+   grid-gap: 0px;
+   border-radius: 10px ;
+   box-shadow: 0px 4px 15px  rgba(0,0,0,.4);
+
+  }
+ 
+
+  nav .logo{
+    color: rgb(255, 255, 255);
+    font-size: 33px;
+    font-weight: bold;
+    font-family: sans-seri;
+    line-height: 70px;
+    margin-left: -30%;
+  }
+  nav{
+    height: 70px;
+    background-color: var(--second);
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+ 
+  nav ul{
+    float: right;
+    margin-right: 30px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: var(--second);
+    
+  }
+   nav ul li a:hover{
+    color: var(--second);
+    background: white;
+    border-radius: 15px;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid   #fffbfb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: all .4s linear;
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+ 
+  .side-img {
+   float: right;
+   width: 580px;
+   margin-top: 70px;
+   border-radius: 300px 0px 0px 300px ;
+   
+   border-right: none;
+  }
+  .info-section {
+    background:initial;
+    height: 580px;
+    
+  }
+ 

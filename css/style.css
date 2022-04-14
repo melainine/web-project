@@ -1,0 +1,134 @@
+
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: -webkit-linear-gradient(#0466c8 ,  #33415c );
+  background-size:cover;
+}
+:root{
+  --main:#0466c8;
+  --second:#33415c;
+}
+.container{
+  overflow:hidden;
+  width: 80%;
+  height: 70px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  transition: all 3s ease;
+}
+.container:hover{
+  overflow:hidden;
+  width: 95%;
+  height: 570px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  transition: all 3s ease;
+}
+.title_inscription{
+  text-align: center;
+  font-size:xx-large;
+  background: -webkit-linear-gradient(147deg,#0466c8 0%, #33415c 74%a);
+  height: 30px;
+  font-weight: bolder;
+  margin-top: 0px;
+}
+.container .form-container{
+  width: 100%;
+  height: 85%;
+  overflow:hidden;
+  padding-bottom: 0%;
+}
+.form-container .form-champ{
+  display: flex;
+  width: 200%;
+}
+.form-container .form-champ form{
+  width: 50%;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+.form-champ form .champ{
+  height: 50px;
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+}
+.form-champ form .champ input{
+  height: 100%;
+  width: 350px;
+  outline: none;
+  padding-left: 15px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  transition: all .3s ease;
+}
+.form-champ form .champ input:focus{
+  border-color:  var(--main);
+  border-bottom-width: 3px;
+  
+}
+.form-champ form .champ input::placeholder{
+  color: #999;
+  transition: all 3s ease;
+}
+form .champ input:focus::placeholder{
+  color: rgb(31, 29, 29);
+}
+.form-champ form .pass-link{
+  margin-top: 5px;
+}
+.form-champ form .signup-link{
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.form-champ form .pass-link a,
+.form-champ form .signup-link a{
+  color: #0466c8  ;
+  text-decoration: none;
+}
+.form-champ form .pass-link a:hover,
+.form-champ form .signup-link a:hover{
+  text-decoration: underline;
+}
+form .btn{
+  height: 50px;
+  width: 70%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+form .btn .btn-layer{
+  height: 70%;
+  width: 100%;
+  position: absolute;
+  left: -50%;
+  background: -webkit-linear-gradient(147deg,#0466c8 0%, #33415c 74%,#0466c8 0%, #33415c 74%);
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+form .btn:hover .btn-layer{
+  left: 0;
+}
+form .btn input[type="submit"]{
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  padding-left: 0px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
